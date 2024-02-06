@@ -1,3 +1,5 @@
+from computer import *
+
 class ResaleShop:
 
     # What attributes will it need?
@@ -9,3 +11,7 @@ class ResaleShop:
         pass # You'll remove this when you fill out your constructor
 
     # What methods will you need?
+    def buy(self, ):
+        # 1. call Computer(...) constructor to create a new Computer instance
+
+        # 2. call inventory.append(...) to add the new Computer instance to the inventory
