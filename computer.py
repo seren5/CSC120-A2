@@ -17,6 +17,15 @@ class Computer:
     operating_system: str,
     year_made: int,
     price: int):
+        self.description = description
+        self.processor_type = processor_type
+        self.hard_drive_capacity = hard_drive_capacity
+        self.memory = memory
+        self.operating_system = operating_system
+        self.year_made = year_made
+        self.price = price
+
         pass # You'll remove this when you fill out your constructor
 
     # What methods will you need?
+    def 
