@@ -14,12 +14,17 @@ class ResaleShop:
         pass # You'll remove this when you fill out your constructor
 
     # What methods will you need?
-    def buy(self, inventory: list, computer):
-        item_nmb += 1
-        inventory[item_nmb] = computer
-        return item_nmb
+    def buy(self, computer):
+        self.item_nmb += 1
+        self.inventory[item_nmb] = computer
+        return self.item_nmb
     
-
+    def sell(self, computer_id):
+        if computer_id in self.inventory:
+            self.inventory.remove(computer_id)
+            print("Done! ", computer_id, "is now sold.")
+        else:
+            print(computer_id, " not found. Please choose another item to sell.")
 
         # 1. call Computer(...) constructor to create a new Computer instance
 
