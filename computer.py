@@ -28,4 +28,10 @@ class Computer:
         pass # You'll remove this when you fill out your constructor
 
     # What methods will you need?
-    def
+    def updatingPrice(self, new_price: int):
+        self.price = new_price
+        return self.price # print updating price in main
+
+    def updatingOS(self, new_OS:str):
+        self.operating_system = new_OS
+        return self.operating_system
