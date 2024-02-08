@@ -63,11 +63,11 @@ def main():
         "macOS Big Sur", 2013, 1500
     )
     shop = ResaleShop()
-    # print(shop.buy(computer))
-    # print(shop.buy(computer))
+    print(shop.buy(computer))
+    print(shop.buy(computer))
     # print(shop.view_inventory)
     # print(shop.sell(computer))
-    print(shop.refurbish(new_os))
+    # print(shop.refurbish(item_nmb, new_os))
 
 
 if __name__ == "__main__": main()
