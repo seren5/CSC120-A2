@@ -37,7 +37,7 @@ __**YES**__ 1 pt: Program prints appropriate error messages
 
 __**YES**___ 4 pts: Program executes fully & consistently without crashing (exception/freeze)
 
-_____ 1 pt: Classes & class members all have header comments
+__**YES**___ 1 pt: Classes & class members all have header comments
 
 __**YES**___ 1 pt: Clear and consistent indentation
 

@@ -37,5 +37,6 @@ class Computer:
         
 
     def updateOS(self, new_OS:str):
+        '''Updates operating system'''
         self.operating_system = new_OS
         return self.operating_system

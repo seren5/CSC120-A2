@@ -18,6 +18,7 @@ class ResaleShop:
 
     # What methods will you need?
     def printInventory(self):
+        '''Prints inventory'''
         if self.itemNumber == 0:
             print("No inventory to show.")
         else:
@@ -26,11 +27,13 @@ class ResaleShop:
                 print(self.inventory[i])
 
     def buy(self, computer):
+        '''Buys computer'''
         self.inventory.append(computer)
         self.itemNumber = len(self.inventory)
         return self.itemNumber
     
     def sell(self, computer_id):
+        '''Sells computer'''
         if computer_id in self.inventory:
             self.inventory.remove[computer_id]
             print("Done! ", computer_id, "is now sold.")
@@ -38,6 +41,7 @@ class ResaleShop:
             print(computer_id, " not found. Please choose another item to sell.")
     
     def refurbish(self, itemNumber: int, new_os: str):
+        '''Refurbishes computer'''
         if self.itemNumber in self.inventory:
             computer = self.inventory[itemNumber]
             if int(computer["year made"]) < 2000:
