@@ -17,6 +17,7 @@ class Computer:
     operating_system: str,
     year_made: int,
     price: int):
+        '''Defines attributes'''
         self.description = description
         self.processor_type = processor_type
         self.hard_drive_capacity = hard_drive_capacity
@@ -25,13 +26,16 @@ class Computer:
         self.year_made = year_made
         self.price = price
 
-        pass # You'll remove this when you fill out your constructor
-
     # What methods will you need?
-    def updatingPrice(self, new_price: int):
-        self.price = new_price
-        return self.price # print updating price in main
+    def updatePrice(self, new_price: int):
+        ''' Updates Price of Computer'''
+        if (self.inventory.contains(Computer)):
+            self.price = new_price
+            return self.price # print updating price in main
+        else:
+            print("You cannot update the price of a computer you don't have!")
+        
 
-    def updatingOS(self, new_OS:str):
+    def updateOS(self, new_OS:str):
         self.operating_system = new_OS
         return self.operating_system
