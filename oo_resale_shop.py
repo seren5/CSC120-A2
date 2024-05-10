@@ -22,6 +22,8 @@ class ResaleShop:
             print("No inventory to show.")
         else:
             return self.inventory
+            for i in range(len(self.inventory)):
+                print(self.inventory[i])
 
     def buy(self, computer):
         self.inventory.append(computer)
@@ -66,7 +68,7 @@ def main():
     shop = ResaleShop()
     print(shop.buy(computer))
     print(shop.buy(computer))
-    print(shop.printInventory)
+    # print(shop.printInventory)
     # print(shop.sell(computer))
     # print(shop.refurbish(2, "Sonoma"))
 
